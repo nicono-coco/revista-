@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'mi fuente 1';
+    src: url('girassol-regular.woff2');
+    font-family: 'mi fuente 2';
+    src: url('girassol-regular-webfont.woff');
+}
+* { 
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño del elemento */ 
+    margin: 0; /* Elimina márgenes que puedan causar desbordamiento */ 
+    padding: 0; /* Elimina rellenos que puedan causar desbordamiento */ }
+
+body {
+    margin: 20%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'mi fuente 2';
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url("fondo.jpg")
+}
+   
+a{font-size: medium;}
+    
+p {font-size:xx-large;}
+
+header {
+    display: flex; /* Usamos flexbox */
+    justify-content: space-between; /* Espaciamos los elementos */
+    align-items: center; /* Centramos verticalmente los elementos */
+    height: 160px; /* Altura del header */
+    width: 100%; /* Ancho total */
+    padding: 0 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluir padding dentro del ancho */
+    border-radius: 10px 10px 10px 10px;
+}
+
+.izq {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-height: 300px; /* Limitar la altura de las imágenes */
+    width: auto; /* Mantener la proporción */
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1; /* El título ocupará todo el espacio disponible */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(46, 49, 219);
+    font-size: 480px;
+}
+
+
+.nav1 {
+    width: 100%;
+    background: rgb(39, 52, 71);
+    height: 40px;
+    margin-bottom: opx;
+}
+
+.nav1 ul {
+    list-style-type: none; /* Elimina los puntos de las listas */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hace que los elementos de la lista se alineen horizontalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.nav1 ul li {
+    float: left;
+    list-style: none;
+    margin: 0 ;
+}
+.ori {margin: 0.05%;}
+.nav1 ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: rgb(139, 208, 255); /* Color inicial del enlace */
+    padding: 10px 95px; /* Añade espacio alrededor de cada enlace */
+    display: block; /* Hace que todo el área del enlace sea clickeable */
+}
+
+.nav1 ul li a:hover {
+    color: rgb(29, 22, 114); /* Cambia el color cuando el puntero pasa sobre el enlace */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra al texto */
+    background-color: rgb(76, 137, 177); /* Opcional: añade un fondo al pasar el cursor */
+}
+
+#container {
+    width: 9000px;
+    margin: 0px auto;
+    border: 1px solid black;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+.titleori {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: #fff;
+    text-indent: 2em; 
+    margin: 1%;
+}
+footer { 
+    background: #ffffff; /* Color de fondo del footer */ 
+    color: rgb(255, 255, 255); /* Color del texto del footer */ 
+    text-align: center; /* Centrar el texto */ 
+    padding: 20px; /* Espaciado interno */ 
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */ 
+    margin-top: 20px; /* Añade un margen superior para separar del div.galeria */
+    }
+.txtori {
+    font-size: medium;
+    color: #fff;
+    text-indent: 2em; 
+    margin-left: 4%;
+    margin-right: 4%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: rgb(127, 219, 255);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+.mobile-menu {
+    height: 100vh;
+    width: 0;
+    max-width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(51, 72, 102);
+    color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    padding: 40px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    background-color: rgb(51, 72, 102);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;}
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 50px;
+    padding: 20px; }
+
+.article {
+    background-color: rgb(52, 69, 94);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 500px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.article:hover {
+    transform: scale(1.05); 
+}
+
+.article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; 
+}
+
+.article h2 {
+    font-size: 1.2em; 
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.article p {
+    font-size: 0.9em; 
+    color: #ffffff;
+}
+/*movil*/
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .mobile-menu.open {
+        width: 250px;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr; 
+    }
+
+    .article img {
+        height: 280px; 
+    }
+
+    .article h2 {
+        font-size: 1em; 
+    }
+
+    .article p {
+        font-size: 0.8em;
+    }
+}
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) 
+
+    /* Ajuste de tamaños de fuente */
+    {}
+    
+    .titleori {
+        font-size: 24px;
+    }
+    .txtori {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    /* Ajustar el tamaño de las imágenes */
+    img {
+        max-width: 90%;
+        height: auto;
+        margin:2%
+    }
+/* Estilos generales para la bandeja de mensajes */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin-top:auto;
+    padding: 0;
+}
+
+.form-container {
+    margin-bottom: 30px;
+    margin-top: 10%;
+    max-width: 800px;
+    margin: 50px auto; 
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-top: 20px;
+    
+}
+
+h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffffff;
+}
+
+/* Estilos para la lista de mensajes */
+.message-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Aseguramos que no se sobreponga a la barra de navegación */
+}
+
+/* Estilo para cada mensaje */
+.message {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.message:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para los diferentes elementos dentro de un mensaje */
+.sender {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+.preview {
+    color: #f6feff;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.date {
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 5px;
+}

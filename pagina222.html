@@ -1,0 +1,95 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Galeria.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="estilos.css" />
+    <title>VIDA DE LOBO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><img height="2000px"width="2000px" src="lobo.png" Logotipo></h1>
+        </header>
+        <div class="navbar">
+            <nav class="nav1">
+                <ul>
+                    <li><a href="pagina222.html">INICIO</a></li>
+                    <li><a href="pagina222.html">ARTICULOS</a></li>
+                    <li><a href="Origen.html">ORIGEN</a></li>
+                    <li><a href="#">COMPRA</a></li>
+                    <li><a href="https://www.menti.com/alf63r2axfau">COMUNIDAD</a></li>
+                    <li><a href="#">CRÉDITOS</a></li>
+                    <li><a href="opo.html">COMENTARIOS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">&#9776; Menú</button>
+        <div class="mobile-menu" id="mobileMenu">
+            <span class="close-btn" onclick="toggleMobileMenu()"></span>
+            <a href="Vidadelobo.html"><i class="fas fa-home"></i> Inicio</a>
+            <a href="#"><i class="fas fa-file-alt"></i> Artículos</a>
+            <a href="Origen.html"><i class="fas fa-info"></i> Origen</a>
+            <a href="Compra.html"><i class="fas fa-shopping-cart"></i> Compra</a>
+            <a href="https://www.menti.com/alf63r2axfau"><i class="fas fa-users"></i> Comunidad</a>
+            <a href="#"><i class="fas fa-credit-card"></i> Créditos</a>
+            <a href="opo.html"><i class="fa fa-envelope-open"></i> Comentarios</a>
+        </div>
+        <div class="main-content">
+            <div class="article">
+                <a href="libros.html" style="color: rgb(39, 52, 71);">
+                    <img src="libros.jpg" alt="libros">
+                    <h2>TERTURIA LITERARIA</h2>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
+                </a>
+            </div>
+            <div class="article">
+                <a href="Libros.html" style="color: rgb(39, 52, 71);">
+                    <img src="navidad.jpg" alt="xmas">
+                    <h2>EVENTO NAVIDAD</h2>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
+                </a>
+            </div>
+            <div class="article">
+                <a href="poemas.html" style="color: rgb(39, 52, 71);">
+                    <img src="poema.jpg" alt="poema">
+                    <h2>POEMAS SECU</h2>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
+                </a>
+            </div>
+            <div class="article">
+                <a href="libros.html" style="color: rgb(39, 52, 71);">
+                    <img src="tips.png" alt="libros">
+                    <h2>TIPS ESTUDIO</h2>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
+                </a>
+            </div>
+            <div class="article">
+                <a href="libros.html" style="color: rgb(39, 52, 71);">
+                    <img src="inte.jpg" alt="xmas">
+                    <h2>ACERTIJOS</h2>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
+                </a>
+            </div>
+            <div class="article">
+                <a href="reportaje.html" style="color: rgb(39, 52, 71);">
+                    <img src="repor.jpg" alt="reportaje">
+                    <h2>REPORTAJE SEMANAL</h2>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
+                </a>
+            </div>
+        </div>
+        <div id="snow"></div>
+        <script src="snow.js"></script>
+
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("open");
+        }
+    </script>
+    
+</body>
+</html>
